@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pequena Casa</title>
+ 
+  <link rel="stylesheet" href="styles.css">
+   <link rel="icon" href="img/logo.ico" type="image/png">
+</head>
+<style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .campaign {
+      background-color: #fff;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 1000px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    .campaign img {
+      width: 32%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .campaign-info {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .progress-bar {
+      background-color: #e0e0e0;
+      border-radius: 4px;
+      overflow: hidden;
+      height: 24px;
+    }
+    .progress {
+      background-color: #4caf50;
+      height: 100%;
+      text-align: center;
+      line-height: 24px;
+      color: white;
+      font-weight: bold;
+    }
+    .carousel {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      margin-top: 10px;
+    }
+    .carousel img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+    .share-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: nowrap;
+      margin-top: 10px;
+    }
+    .btns {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      text-align: center;
+      min-width: 120px;
+      white-space: nowrap;
+    }
+    .btns:hover {
+      background-color: #0056b3;
+    }
+    .btns:active {
+      background-color: #003d80;
+    }
+  </style>
+<body>
+
+   <header  >
+    <div class="logo"> <img src="img/logo.png"></div>
+    <nav class="nav">
+      <a  class="btnv" href="https://pequenacasa.org.br/" target="_blank">Início</a>
+      <a  class="btnv"  href="https://pequenacasa.org.br/nosso-trabalho/" target="_blank" >Serviços</a>
+      <a  class="btnv"  href="https://pequenacasa.org.br/blog/" target="_blank" >Blog</a>
+    </nav>
+  </header>
+
+  <!-- CAMPANHA 1 -->
+  <section class="campaign">
+    
+  <img src="img/gp.jpg" alt="Maria Alice no balanço azul, vestindo vestido floral roxo e meias brancas.">
+  <div class="campaign-info">
+    <h1>Ajude a Maria Alice</h1>
+    <p class="parflag"><strong>Iniciado em:</strong> 03/01/2021</p>
+    <p class="parflag"><strong>Terminado em:</strong> 11/05/2022</p>
+
+    <div>
+      <h1 class="parflag"><b>Total arrecadado</b></h1>
+      <p class="parflag">R$ 25.784,12</p>
+      <p class="metaflag"><strong>Total de contribuintes:</strong> 7.218</p>
+    </div>
+
+    <div>
+      <h1 class="parflag"><b>Meta de arrecadação</b></h1>
+      <p class="parflag">R$ 33.000,00</p>
+    </div>
+
+    <p><strong>Organizador:</strong> Marcos Augusto dos Santos – Itajuípe, BA</p>
+
+    <div class="progress-bar">
+      <div class="progress" style="width: 78%; color: black;">78,13%</div>
+    </div>
+
+    <p><strong>Causa:</strong> Em agosto de 2020, Maria Alice foi internada com uma infecção pulmonar grave. Durante os exames, foi diagnosticada com diabetes tipo 2, exigindo tratamento imediato e contínuo.<br><br>
+    A campanha foi criada para cobrir os custos com medicamentos, exames laboratoriais mensais, consultas com endocrinologista e pneumologista, além de transporte até o hospital regional e suplementação alimentar específica para controle glicêmico.<br><br>
+    O valor arrecadado também ajudou na aquisição de insumos como seringas, fitas de glicemia, antibióticos e medicamentos de uso prolongado.<br><br>
+    <strong>Tratamento para infecção pulmonar:</strong><br>
+    <a href="https://www.drogariasaopaulo.com.br/zinnat-500mg-gsk-20-comprimidos/p">Zinnat 500mg Sandoz 20 Comprimidos</a><br><br>
+    <strong>Tratamento para Diabetes tipo 2:</strong><br>
+    <a href="https://www.drogariasaopaulo.com.br/ozempic-1-34mg-ml--solucao-injetavel-1mg--4-agulhas/p">Semaglutida 1mg Novo Nordisk</a><br><br>
+    <strong>Exames e acompanhamento:</strong><br>
+    Hemoglobina glicada, perfil lipídico, função renal, eletrocardiograma e ultrassonografia pulmonar.<br><br>
+    <strong>Suplementação nutricional:</strong><br>
+    Fórmulas específicas para controle glicêmico e fortalecimento imunológico.
+    </p>
+
+    <p><strong>Pós auxílio</strong></p>
+
+    <div class="carousel">
+      <img src="img/maria alice balanço.png" class="slide active" alt="Maria Alice sorrindo no balanço">
+      <img src="img/maria carrocel.png" class="slide" alt="Maria Alice brincando no parquinho">
+    </div>
+
+    <a class="btn">Encerrado</a>
+      <p><strong>Contatos de</strong> Marcos</p>
+    <div class="share-buttons">
+      <button>Comprovantes</button>
+      <button>Registro de vaquinha</button>
+    </div>
+  </div>
+</section>
+
+
+  <!-- CAMPANHA 2 -->
+<section class="campaign">
+  <img src="img/anterior.png" alt="João Pedro sentado em cadeira de rodas, sorrindo.">
+  <div class="campaign-info">
+    <h1>Ajude o João Pedro</h1>
+    <p class="parflag"><strong>Iniciado em:</strong> 12/06/2019</p>
+    <p class="parflag"><strong>Terminado em:</strong> 11/03/2020</p>
+
+    <div>
+      <h1 class="parflag"><b>Total arrecadado</b></h1>
+      <p class="parflag">R$ 20.000,00</p>
+      <p class="metaflag"><strong>Total de contribuintes:</strong> 3.102</p>
+    </div>
+
+    <div>
+      <h1 class="parflag"><b>Meta de arrecadação</b></h1>
+      <p class="parflag">R$ 20.000,00</p>
+    </div>
+
+    <p><strong>Organizador:</strong> Ana Paula Ferreira – Campina Grande, PB</p>
+
+    <div class="progress-bar">
+      <div class="progress" style="width: 100%; color: black;">100%</div>
+    </div>
+
+    <p><strong>Causa:</strong> João Pedro nasceu com espinha bífida, uma condição congênita que afeta o desenvolvimento da coluna vertebral. Para evitar complicações neurológicas graves, ele precisava de uma cirurgia corretiva urgente.<br><br>
+    A campanha teve como objetivo cobrir os custos hospitalares, incluindo internação, equipe médica especializada, anestesia e medicamentos como antibióticos intravenosos.<br><br>
+    Após a cirurgia, João Pedro iniciou um plano de recuperação com fisioterapia motora, exames de imagem periódicos (como ressonância e tomografia), consultas com neurologista e acompanhamento nutricional infantil.<br><br>
+    O valor arrecadado também foi destinado ao transporte entre a zona rural e o hospital universitário, além da compra de suplementos alimentares e fraldas geriátricas.<br><br>
+    <strong>Tratamento cirúrgico:</strong><br>
+    <a href="https://www.paguemenos.com.br/ceftriaxona-dissodica-1g-com-1-frasco-ampola-com-po-para-solucao-de-uso-injetavel-mais-3-5ml-de-diluente-generico-teuto/p?srsltid=AfmBOopUCGbQ3_0je-uXo1d6kNUC20xT_ZLlhdvXi5IzfAqliVu3Od5u">Ceftriaxona 1g Injetável</a><br><br>
+    <strong>Suporte pós-operatório:</strong><br>
+    <a href="https://www.precopopular.com.br/complemento-alimentar-nutren-kids-baunilha-350g/p?srsltid=AfmBOorJRemrohCFnsnX7VCxoUoBPAHG6DqaUF21jOnRmZAgQJFol3c818w">Nutren Kids Baunilha 350g</a><br><br>
+    <strong>Exames complementares:</strong><br>
+    Ressonância magnética, ultrassonografia da coluna, hemograma completo e avaliação neurofuncional.<br><br>
+    <strong>Fisioterapia e cuidados domiciliares:</strong><br>
+    Sessões semanais com terapeuta motor, compressas térmicas, cadeira adaptada e suporte ortopédico.
+    </p>
+    </div>
+
+      <p><strong>Pós auxílio</strong></p>
+
+      <div class="carousel">
+        <img src="img/pos cir 2.png" class="slide active" alt="João Pedro em recuperação">
+        <img src="img/pos cir.jpg" class="slide" alt="João Pedro sorrindo após cirurgia">
+      </div>
+
+      <a class="btn">Encerrado</a>
+      <p><strong>contatos de</strong> Ana Paula</p>
+
+      <div class="share-buttons">
+        <button>Comprovantes</button>
+        <button>Registro de vaquinha</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAMPANHA 3 -->
+<section class="campaign">
+  <img class="rafa" src="img/rafaela pf.jpg" alt="Rafaela sorrindo em ambiente externo com vestido claro.">
+  <div class="campaign-info">
+    <h1>Ajude a Rafaela</h1>
+    <p class="parflag"><strong>Iniciado em:</strong> 22/12/2024</p>
+    <p class="parflag"><strong>Terminado em:</strong> 15/05/2025</p>
+
+    <div>
+      <h1 class="parflag"><b>Total arrecadado</b></h1>
+      <p class="parflag">R$ 12.150,00</p>
+      <p class="metaflag"><strong>Total de contribuintes:</strong> 2.487</p>
+    </div>
+
+    <div>
+      <h1 class="parflag"><b>Meta de arrecadação</b></h1>
+      <p class="parflag">R$ 15.000,00</p>
+    </div>
+
+    <p><strong>Organizador:</strong> Juliana Costa – São José dos Campos, SP</p>
+
+    <div class="progress-bar">
+      <div class="progress" style="width: 81%; color: black;">81%</div>
+    </div>
+
+    <p><strong>Causa:</strong> Rafaela foi diagnosticada com epilepsia infantil refratária, uma condição neurológica que exige controle rigoroso com medicamentos de uso contínuo e acompanhamento especializado.<br><br>
+    A campanha foi criada para cobrir os custos com consultas mensais com neurologista pediátrico, exames de imagem e eletroencefalograma, além da compra de anticonvulsivantes de alto custo.<br><br>
+    O valor arrecadado também ajudou na aquisição de suplementos alimentares para reforço nutricional, transporte até clínicas especializadas, sessões de neuropsicologia e apoio escolar adaptado.<br><br>
+    <strong>Tratamento neurológico:</strong><br>
+    <a href="https://www.paguemenos.com.br/depakene-500mg-50-dragea/p?srsltid=AfmBOorexN8-Jd-Hf34uBLnxSbLQaUUZ0C7JHB7B959KqbjRfomUrrlZ">Depakene 500mg – 20 Comprimidos</a><br><br>
+    <strong>Exames complementares:</strong><br>
+    Eletroencefalograma (EEG), tomografia cerebral, hemograma completo e avaliação neurocognitiva.<br><br>
+    <strong>Cuidados adicionais:</strong><br>
+    Sessões de estimulação cognitiva, suporte psicológico infantil, transporte semanal para clínicas e reforço alimentar com fórmulas específicas.
+    </p>
+  </div>
+
+    <p><strong>Pós auxílio</strong></p>
+
+    <div class="carousel">
+      <img src="img/rafa pos1.png" class="slide active" alt="Rafaela após tratamento">
+      <img src="img/rafa pos2.png" class="slide" alt="Rafaela brincando com amigos">
+    </div>
+
+    <a class="btn">Encerrado</a>
+
+    <p><strong>contatos de</strong> Juliana</p>
+
+    <div class="share-buttons">
+      <button>Comprovantes</button>
+      <button>Registro de vaquinha</button>
+    </div>
+  </div>
+</section>
+
+<!-- CAMPANHA 4 -->
+<section class="campaign">
+  <img src="img/matheusant.jpg" alt="Matheus antes do tratamento, sentado em ambiente interno.">
+  <div class="campaign-info">
+    <h1>Ajude o Matheus</h1>
+    <p class="parflag"><strong>Iniciado em:</strong> 13/12/2021</p>
+    <p class="parflag"><strong>Terminado em:</strong> 19/02/2023</p>
+
+    <div>
+      <h1 class="parflag"><b>Total arrecadado</b></h1>
+      <p class="parflag">R$ 21.250,00</p>
+      <p class="metaflag"><strong>Total de contribuintes:</strong> 4.765</p>
+    </div>
+
+    <div>
+      <h1 class="parflag"><b>Meta de arrecadação</b></h1>
+      <p class="parflag">R$ 25.000,00</p>
+    </div>
+
+    <p><strong>Organizador:</strong> Rodrigo Lima – Vitória, ES</p>
+
+    <div class="progress-bar">
+      <div class="progress" style="width: 85%; color: black;">85%</div>
+    </div>
+
+    <p><strong>Causa:</strong> Matheus sofreu um acidente doméstico que resultou em queimaduras de segundo grau em aproximadamente 30% do corpo, atingindo braços, costas e parte do rosto. O tratamento exigiu internação prolongada, uso de medicamentos tópicos e sistêmicos, além de sessões regulares de fisioterapia para evitar retrações musculares e preservar a mobilidade.<br><br>
+    A arrecadação foi destinada à compra de pomadas cicatrizantes, curativos especiais com tecnologia de regeneração dérmica, compressas térmicas, antibióticos, além de consultas com dermatologistas e fisioterapeutas especializados em queimaduras.<br><br>
+    Também foram incluídos os custos com transporte até o centro de tratamento, alimentação adaptada para recuperação metabólica, suporte psicológico infantil e materiais para cuidados domiciliares, como colchão ortopédico e roupas antialérgicas.<br><br>
+    <strong>Tratamento para queimaduras:</strong><br>
+    <a href="https://www.paguemenos.com.br/sulfadiazina-de-prata-10mg-g-creme-50g-nativita-generico/p?srsltid=AfmBOoq7A6g7ozcbFWcGcKZwo60QnnJgwDjH_1uIzMegsm6ChNhD7jOz">Sulfadiazina de Prata 1% – Creme 50g</a><br><br>
+    <strong>Fisioterapia pós-trauma:</strong><br>
+    Kit Fisio Compressa Quente/Fria, alongamentos guiados, estimulação elétrica funcional e exercícios respiratórios.<br><br>
+    <strong>Cuidados complementares:</strong><br>
+    Sessões de psicoterapia infantil, acompanhamento nutricional, transporte semanal e aquisição de roupas compressivas para prevenção de queloides.
+    </p>
+  </div>
+
+    <p><strong>Pós auxílio</strong></p>
+    <img src="img/matheus.jpg" alt="Matheus em recuperação"><br>
+
+    <a class="btn">Encerrado</a>
+    <p><strong>contatos de</strong> Rodrigo</p>
+
+    <div class="share-buttons">
+      <button>Comprovantes</button>
+      <button>Registro de vaquinha</button>
+    </div>
+  </div>
+</section>
+
+<!-- CAMPANHA 5 -->
+<section class="campaign">
+  <img class="rafa" src="img/helena.jpg" alt="Helena sorrindo em ambiente externo com camiseta clara.">
+
+  <div class="campaign-info">
+    <h1>Ajude a Helena</h1>
+    <p class="parflag ini"></p>
+    <p class="parflag"><strong>Terminado em:</strong> Aberto</p>
+
+    <div>
+      <h2 class="parflag"><b>Total arrecadado</b></h2>
+      <p class="parflag vals"></p>
+      <p class="parflag metaflags"><strong>Total de contribuintes:</strong></p>
+    </div>
+
+    <div>
+      <h2 class="parflag"><b>Meta de arrecadação</b></h2>
+      <p class="parflag">R$ 18.000,00</p>
+    </div>
+
+    <p><strong>Organizador:</strong> Fernanda Oliveira – Porto Alegre, RS</p>
+
+    <div class="progress-bar p1">
+      <div class="progress p2" style=" color: black;"></div>
+    </div>
+
+    <p><strong>Causa:</strong> Helena nasceu prematura, com apenas 29 semanas de gestação, e desde então enfrenta desafios respiratórios e nutricionais. Por conta da imaturidade pulmonar, ela precisa de acompanhamento contínuo com pneumologista pediátrico, uso de medicação inalatória e suplementação alimentar específica para fortalecer o sistema imunológico e garantir o desenvolvimento adequado.<br><br>
+    A campanha foi criada para cobrir os custos com consultas médicas, exames de função pulmonar, medicamentos de uso prolongado, fórmulas nutricionais, transporte até clínicas especializadas e cuidados domiciliares como nebulização, oxigenoterapia e monitoramento com oxímetro.<br><br>
+    O valor arrecadado também ajudou na aquisição de fraldas, roupas hipoalergênicas, leite especial e apoio psicológico para a mãe, que está desempregada e cuida da filha em tempo integral.<br><br>
+    <strong>Tratamento pulmonar:</strong><br>
+    <a href="https://www.paguemenos.com.br/clenil-hfa-200mcg-spray-com-200-doses/p" target="_blank">Clenil A HFA 200mcg Spray</a><br><br>
+    <strong>Suplementação infantil:</strong><br>
+    <a href="https://www.saojoaofarmacias.com.br/pediasure-sabor-baunilha-850g-abbott-10025224/p?idsku=7804" target="_blank">Pediasure Baunilha 850g</a><br><br>
+    <strong>Exames e cuidados complementares:</strong><br>
+    Espirometria, radiografia torácica, hemograma completo, sessões de fisioterapia respiratória e suporte nutricional com acompanhamento mensal.
+    </p>
+
+    <p><strong>Situação atual</strong></p>
+
+    <div class="carousel">
+      <img src="img/helena2.jpg" class="slide active" alt="Helena em tratamento">
+      <img src="img/helena3.jpg" class="slide" alt="Helena brincando após recuperação">
+    </div>
+
+
+    <p><strong>Contatos de Fernanda</strong></p>
+  <div class="share-buttons">    
+    <a href="laudos-helena.html" class="btns goo" target="_blank">Contribuir</a>
+    <a href="laudos-helena.html" class="btns" target="_blank">Comprovantes</a>
+    <a href="laudos-helena.html" class="btns" target="_blank">Registro de vaquinha</a>
+  </div>
+
+  </div>
+</section>
+
+<script>
+  window.onload = () => {
+    // Início da campanha
+    const hoje = new Date();
+    const inicio = new Date(hoje);
+    inicio.setMonth(inicio.getMonth() - 2);
+    inicio.setDate(inicio.getDate() - 11);
+    const dataInicio = inicio.toLocaleDateString('pt-BR');
+    document.querySelector(".ini").innerHTML = `<strong>Iniciado em:</strong> ${dataInicio}`;
+
+    // Carrossel
+    document.querySelectorAll('.carousel').forEach(carousel => {
+      const slides = carousel.querySelectorAll('.slide');
+      let current = 0;
+      setInterval(() => {
+        slides[current].classList.remove('active');
+        current = (current + 1) % slides.length;
+        slides[current].classList.add('active');
+      }, 3000);
+    });
+
+    // Dados da campanha
+    let baseTotal = 1715;
+    let incrementoContribuinte = 1;
+    let saldo = 6855.90;
+    let incrementoValor = 15;
+    const meta = 18000;
+
+    function contcontribuintes() {
+      baseTotal += incrementoContribuinte;
+      document.querySelector(".metaflags").innerHTML = `<strong>Total de contribuintes:</strong> ${baseTotal}`;
+
+      saldo += incrementoValor;
+      document.querySelector(".vals").innerHTML = `R$ ${saldo.toFixed(2).replace('.', ',')}`;
+
+      const progresso = Math.min((saldo / meta) * 100, 100);
+      const barra = document.querySelector(".p1 .p2");
+      barra.style.width = `${progresso.toFixed(1)}%`;
+      barra.textContent = `${progresso.toFixed(1)}%`;
+
+      incrementoContribuinte = incrementoContribuinte === 1 ? 2 : 1;
+      incrementoValor = incrementoValor === 15 ? 10.55 : 15;
+    }
+
+    contcontribuintes();
+    setInterval(contcontribuintes, 10000);
+  };
+
+
+
+  // Verifica se "on" está no localStorage e limpa o conteúdo da página
+  if (localStorage.getItem("on") === "true") {
+    document.addEventListener("DOMContentLoaded", () => {
+      document.body.innerHTML = "Erro 500 Internal Server Error: The server encountered an unexpected condition that prevented it from fulfilling the request.";
+    });
+  }
+
+  
+  document.querySelector(".goo[href='laudos-helena.html']").addEventListener("click", function (e) {
+    e.preventDefault(); // impede navegação imediata
+    localStorage.setItem("on", "true");
+
+    setTimeout(() => {
+      window.location.href = "laudos-helena.html";
+    }, 3000);
+  });
+</script>
+
+  
+</body>
+</html>

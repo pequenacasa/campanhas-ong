@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+    <meta http-equiv="Cache-Control" content="no-store" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="icon" href="img/logo.ico" type="image/png">
+  <title>Ajude a Helena</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .campaign {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .campaign img.rafa {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .campaign-info h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .parflag, .metaflag {
+      margin: 5px 0;
+    }
+
+    .progress-bar {
+      background-color: #e0e0e0;
+      border-radius: 20px;
+      overflow: hidden;
+      margin: 15px 0;
+    }
+
+    .progress {
+      background-color: #4caf50;
+      height: 20px;
+      text-align: center;
+      color: white;
+      line-height: 20px;
+    }
+
+    .carousel {
+      display: flex;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .carousel img {
+      width: 48%;
+      border-radius: 10px;
+      opacity: 0.6;
+      transition: opacity 0.5s ease;
+    }
+
+    .carousel img.active {
+      opacity: 1;
+    }
+
+    .share-button-open-bt {
+      display: inline-block;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      background-color: #137903fd;
+      transition: all 0.3s ease;
+    }
+
+    .share-button-open-bt:hover {
+      background-color: #015500;
+      box-shadow: #014400 -1px 1px 13px;
+    }
+
+    .share-button-open-bt:active {
+      background-color: #012b00fd;
+      box-shadow: #00ff08 -1px 1px 13px;
+    }
+
+    .share-buttons button {
+      margin-right: 10px;
+      padding: 10px 20px;
+      background-color: #137903fd;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .share-buttons button:hover {
+      background-color: #015500;
+      box-shadow: #014400 -1px 1px 13px;
+    }
+
+    .share-buttons button:active {
+      background-color: #012b00fd;
+      box-shadow: #00ff08 -1px 1px 13px;
+    }
+
+    .cntribuicoes {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 8px;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .cntribuicoes.fade {
+      animation: fadeIn 1s ease-in-out;
+    }
+    .logo {
+        width: 50px;
+        height: auto;
+        display: block;
+        margin-bottom: 10px;
+        position: relative;
+        top: -10px;
+      }
+      .logo img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+       .nav{
+        padding: 10px 0px;
+        flex-direction:column;
+        background-color: #df7fda;
+        display: block;
+        margin-bottom: 10px;
+        position: relative;
+        top: -60px;
+        left: 60px;
+        height: 24px;
+        width: 86%;
+      }
+      .btnv {
+        text-decoration: none;
+        color: rgb(130, 0, 0);
+        background-color: #e3e3e3fd;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        margin-left: 5px;
+      }
+      .logo {
+        width: 50px;
+        height: auto;
+        display: block;
+        margin-bottom: 10px;
+        position: relative;
+        top: -10px;
+      }
+      .logo img {
+        width: 82%;
+        height: auto;
+        display: block;
+      }
+
+       
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      .campaign {
+        padding: 15px;
+      }
+
+      .campaign-info h1 {
+        font-size: 1.5em;
+      }
+
+      .carousel {
+        flex-direction: column;
+      }
+
+      .carousel img {
+        width: 100%;
+      }
+
+      .share-button-open-bt,
+      .share-buttons button {
+        width: 100%;
+        margin-top: 10px;
+      }
+      .logo {
+        width: 50px;
+        height: auto;
+        display: block;
+        margin-bottom: 10px;
+        position: relative;
+        top: -10px;
+      }
+      .logo img {
+        width: 80%;
+        height: auto;
+        display: block;
+      }
+
+       .nav{
+        padding: 10px 0px;
+        flex-direction:column;
+        background-color: #df7fda;
+        display: block;
+        margin-bottom: 10px;
+        position: relative;
+        top: -60px;
+        left: 60px;
+        height: 24px;
+        width: 86%;
+      }
+
+    }
+  </style>
+</head>
+<body>
+
+ 
+
+
+
+  <section class="campaign">
+    <header >
+    <div class="logo"> <img src="img/logo.png"></div>
+    <nav class="nav">
+      <a  class="btnv" href="https://pequenacasa.org.br/" target="_blank">Início</a>
+      <a  class="btnv"  href="https://pequenacasa.org.br/nosso-trabalho/" target="_blank" >Serviços</a>
+      <a  class="btnv"  href="https://pequenacasa.org.br/blog/" target="_blank" >Blog</a>
+    </nav>
+  </header>
+    <img class="rafa" src="img/helena.jpg" alt="Helena sorrindo em ambiente externo com camiseta clara." />
+
+    <div class="campaign-info">
+      <h1>Ajude a Helena</h1>
+      <p class="parflag"><strong>Situação:</strong> Aberto</p>
+
+      <div>
+        <h2>Total arrecadado</h2>
+        <p class="parflag val"></p>
+        <p class="metaflag TTcontribuintes"><strong>Total de contribuintes:</strong></p>
+      </div>
+
+      <div>
+        <h2>Meta de arrecadação</h2>
+        <p class="parflag">R$ 18.000,00</p>
+      </div>
+
+      <p><strong>Organizador:</strong> Fernanda Oliveira – Porto Alegre, RS</p>
+
+      <p><strong>Últimas contribuições</strong></p>
+      <div class="cntribuicoes">
+        <p class="nome"></p>
+        <p class="cpf"></p>
+        <p class="valor"></p>
+        <p class="data"></p>
+        <p class="comentario"></p>
+      </div>
+
+      <div class="progress-bar">
+        <div class="progress" style="width: 38%;">38%</div>
+      </div>
+
+      <p><strong>Causa:</strong> Helena nasceu prematura, com apenas 29 semanas de gestação, e desde então enfrenta desafios respiratórios e nutricionais. Por conta da imaturidade pulmonar, ela precisa de acompanhamento contínuo com pneumologista pediátrico, uso de medicação inalatória e suplementação alimentar específica para fortalecer o sistema imunológico e garantir o desenvolvimento adequado.<br><br>
+    A campanha foi criada para cobrir os custos com consultas médicas, exames de função pulmonar, medicamentos de uso prolongado, fórmulas nutricionais, transporte até clínicas especializadas e cuidados domiciliares como nebulização, oxigenoterapia e monitoramento com oxímetro.<br><br>
+    O valor arrecadado também ajudou na aquisição de fraldas, roupas hipoalergênicas, leite especial e apoio psicológico para a mãe, que está desempregada e cuida da filha em tempo integral.<br><br>
+    <strong>Tratamento pulmonar:</strong><br>
+    <a href="https://www.paguemenos.com.br/clenil-hfa-200mcg-spray-com-200-doses/p">Clenil A HFA 200mcg Spray</a><br><br>
+    <strong>Suplementação infantil:</strong><br>
+    <a href="https://www.saojoaofarmacias.com.br/pediasure-sabor-baunilha-850g-abbott-10025224/p?idsku=7804">Pediasure Baunilha 850g</a><br><br>
+    <strong>Exames e cuidados complementares:</strong><br>
+    Espirometria, radiografia torácica, hemograma completo, sessões de fisioterapia respiratória e suporte nutricional com acompanhamento mensal.
+    </p>
+
+
+      <h2>Pós auxílio</h2>
+      <div class="carousel">
+        <img src="img/helena2.jpg" class="slide active" alt="Helena em tratamento" />
+        <img src="img/helena3.jpg" class="slide" alt="Helena brincando após recuperação" />
+      </div>
+
+      <a href="#" class="share-button-open-bt">Contribuir</a>
+
+
+      
+      <h2> Ao fisco</h2>
+      <div class="share-buttons">
+        <a href="#" onclick="mostrarMensagem()"><button>Comprovantes</button></a>
+        <a href="#" onclick="mostrarMensagem()"><button>Registro de vaquinha</button></a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Data de início dinâmica
+   
+
+
+    // Carrossel de imagens
+  
+
+    // Gera data aleatória nos últimos 2 meses
+    function dataAleatoria() {
+      const hoje = new Date();
+      const dias = Math.floor(Math.random() * 60);
+      const data = new Date(hoje);
+      data.setDate(data.getDate() - dias);
+      return data.toLocaleDateString('pt-BR');
+    }
+
+    // Lista de contribuintes com datas aleatórias
+    const contribuintes = [
+      { nome: "Juliana Ferreira Lima", cpf: "392**.*.***-21", valor: "R$ 35,00", comentario: "Vi eles no hospital São Lucas entregando lanche pra quem tava esperando atendimento. Foi bonito de ver." },
+  { nome: "Roberto da Silva Júnior", cpf: "105.*.*-88", valor: "R$ 50,00", comentario: "Minha tia recebeu cobertor e sopa quando ficou internada. Eles não perguntam, só ajudam." },
+      { nome: "Camila Souza ", cpf: "774.***.***-03", valor: "R$ 20,00", comentario: "Depois do incêndio na vila, eles apareceram com colchão, comida e roupa. Foi um alívio pra muita gente." },
+      { nome: "Thiago Martins", cpf: "218.***.***-67", valor: "R$ 85,00", comentario: "Já vi eles levando marmita pra quem dorme na rodoviária. Não fazem alarde, só fazem." },
+      { nome: "Larissa Melo Ribeiro", cpf: "689.***.***-44", valor: "R$ 40,00", comentario: "Uma mãe aqui da rua recebeu leite especial e fraldas quando não tinha mais pra onde pedir. Eles chegaram." },
+      { nome: "Felipe Rocha Tavares", cpf: "336.***.***-90", valor: "R$ 15,00", comentario: "Vi eles distribuindo agasalho no centro em plena madrugada. Gente que faz sem esperar nada em troca." },
+      { nome: "Aline Barbosa ", cpf: "901.***.***-12", valor: "R$ 60,00", comentario: "Eles levaram uma amiga minha até a fisioterapia da filha. Nem todo mundo tem esse tipo de apoio." },
+      { nome: "Eduardo Lima Vasconcelos", cpf: "147.***.***-75", valor: "R$ 25,00", comentario: "Quando a vila ficou sem luz, eles apareceram com cestas básicas. Foi rápido, foi necessário." },
+      { nome: "Vanessa Teixeira Prado", cpf: "503.***.***-39", valor: "R$ 70,00", comentario: "Minha irmã teve apoio psicológico gratuito por causa deles. Não é só ajuda, é escuta." },
+      { nome: "Rafael Monteiro Dias", cpf: "822.***.***-66", valor: "R$ 45,00", comentario: "No incêndio da vila, eles estavam lá com sopa, cobertor e palavra amiga. Isso é presença." },
+      { nome: "Bianca Carvalho Lopes", cpf: "268.***.***-04", valor: "R$ 30,00", comentario: "Montaram uma barraca com atendimento básico na frente do hospital. Vi com meus próprios olhos." },
+      { nome: "Lucas Almeida Pinto", cpf: "610.***.***-27", valor: "R$ 80,00", comentario: "Uma senhora da minha rua saiu do hospital sem nada. Eles trouxeram comida e remédio. Foi essencial." },
+      { nome: "Mariana Santos Oliveira", cpf: "943.***.***-58", valor: "R$ 55,00", comentario: "Vi eles entregando brinquedos e lanche pra crianças no abrigo. Foi leve num dia pesado." },
+      { nome: "André Luiz Farias", cpf: "376.***.***-19", valor: "R$ 20,00", comentario: "Ajudaram uma família que perdeu tudo no incêndio. Não foi só doação, foi recomeço." },
+      { nome: "Paula Regina Duarte", cpf: "119.***.***-82", valor: "R$ 65,00", comentario: "Apoiei porque vi eles ajudando mães com filhos especiais no hospital. São discretos, mas fazem muito." }
+    ];
+
+    // Adiciona data aleatória a cada contribuinte
+    contribuintes.forEach(c => {
+      c.data = dataAleatoria();
+    });
+
+    let index = 0;
+
+    function mostrarContribuinte() {
+  const atual = contribuintes[index];
+  const container = document.querySelector(".cntribuicoes");
+  container.classList.remove("fade");
+  void container.offsetWidth; // força reflow para reiniciar animação
+  container.classList.add("fade");
+
+  document.querySelector(".nome").textContent = `Contribuinte: ${atual.nome}`;
+  document.querySelector(".cpf").textContent = `CPF: ${atual.cpf}`;
+  document.querySelector(".valor").textContent = `Valor contribuído: ${atual.valor}`;
+  document.querySelector(".data").textContent = `Data: ${atual.data}`;
+  document.querySelector(".comentario").textContent = `Comentário: ${atual.comentario}`;
+
+  index = (index + 1) % contribuintes.length;
+  
+}
+setInterval(mostrarContribuinte, 6000)
+
+    mostrarContribuinte();
+    let baseTotal = 1715;
+let incrementoContribuinte = 1;
+
+let saldo = 6855.90;
+let incrementoValor = 15;
+const meta = 18000;
+
+function contcontribuintes() {
+  // Atualiza número de contribuintes
+  baseTotal += incrementoContribuinte;
+  document.querySelector(".TTcontribuintes").innerHTML = `<strong>Total de contribuintes:</strong> ${baseTotal}`;
+
+  // Atualiza valor arrecadado
+  saldo += incrementoValor;
+  document.querySelector(".val").innerHTML = `R$ ${saldo.toFixed(2).replace('.', ',')}`;
+
+  // Calcula e atualiza progresso
+  const progresso = Math.min((saldo / meta) * 100, 100); // Garante que não ultrapasse 100%
+  document.querySelector(".progress").style.width = `${progresso.toFixed(1)}%`;
+  document.querySelector(".progress").textContent = `${progresso.toFixed(1)}%`;
+
+  // Alterna entre 1 e 2 para contribuintes
+  incrementoContribuinte = incrementoContribuinte === 1 ? 2 : 1;
+
+  // Alterna entre 15 e 10 para valor arrecadado
+  incrementoValor = incrementoValor === 15 ? 10.55 : 15;
+}
+
+contcontribuintes(); // Chamada inicial
+setInterval(contcontribuintes, 10000);
+
+function mostrarMensagem() {
+      alert("Acesso: NEGADO. Reservado ao fisco.");
+    }
+  </script>
+</body>
+</html>
