@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+    <meta http-equiv="Cache-Control" content="no-store" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="icon" href="img/logo.ico" type="image/png">
+  <title>checkout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .checkout {
+      width: 100%;
+      height: 100vh;
+      border: none;
+    }
+
+    
+
+  .blocks2 {
+  height: 145px;
+  width: 88%; /* ajuste conforme o tamanho da área a bloquear */
+  background-color: rgba(255, 255, 255, 0); /* transparente */
+  position: fixed;
+  top: 57px; /* ajuste conforme a posição do botão */
+  left: 0;
+  z-index: 10;
+  pointer-events: auto;
+  display: flex;
+  flex-wrap: nowrap;
+    }
+
+    .txt {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      color: rgb(17, 16, 16);
+      margin: 80px 0px 0px 20px;
+      cursor: pointer;
+    }
+    .btn {
+      height: 60px;
+      width: 200px; /* ajuste conforme o tamanho do botão */
+      background-color: rgba(255, 255, 255, 0); /* transparente */
+      margin: 80px 0px 0px 20px; /* ajuste conforme a posição do botão */
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sobreposição para bloquear clique no botão dentro do iframe -->
+  <div class="blocks2">
+   <div class="btn"></div>
+   <div class="btn"></div>
+   <a href="https://pequenacasa.github.io/campanhas-ong/laudos-helena.html"><div class="btn"></div> </a>
+  </div>
+
+  <!-- Iframe da vaquinha -->
+  <iframe class="checkout" src="https://www.abacashi.com/vaquinha/de-forcas-a-pequena-helena/contribuicao"></iframe>
+
+</body>
+</html>
